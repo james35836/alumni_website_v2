@@ -15,9 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', 'FrontController@home');
-Route::get('/login','FrontController@login');
-Route::get('/about', 'FrontController@about');
-Route::get('/alumni_story','FrontController@alumni_story');
-Route::get('/program', 'FrontController@program');
-Route::get('/aboutss','FrontController@login');
+Route::get('/home', 				'FrontController@home');
+Route::get('/login',				'FrontController@login');
+Route::get('/about', 				'FrontController@about');
+Route::get('/alumni_story',			'FrontController@alumni_story');
+Route::get('/program', 				'FrontController@program');
+Route::get('/alumni_story/details',	'FrontController@alumni_story_details');
+
+
+Route::get('/dashboard',	        'AlumniController@dashboard');
+Route::get('/profile',	        'AlumniController@profile');

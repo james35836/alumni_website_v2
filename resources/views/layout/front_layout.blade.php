@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <link rel="icon" href="favicon.ico" type="image/ico" />
+    <link rel="icon" href="/assets/favicon.ico" type="image/ico" />
     <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/animate.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/owl.carousel.css" />
@@ -54,9 +54,11 @@
             </div>
             <div class="header-middle">
                 <div class="container">
+
                     <!-- <div class="logo hidden-sm hidden-xs">
                         <a href="#"> <img src="/assets/images/logo.png" alt="logo"></a>
                     </div> -->
+                    
                     <div class="menu">
                         <nav>
                             <ul class="nav navbar-nav">
@@ -90,9 +92,26 @@
     <!--End header wrapper-->
     <!--Begin content wrapper-->
     <div class="content-wrapper">
+        <style>
+            @media (min-width: 992px)
+            {
+                .padding-div 
+                {
+                    padding-top:100px;
+                }
+            }
+            @media (max-width: 991px)
+            {
+                .padding-div 
+                {
+                    display:none;
+                }
+            }
+        </style>
+        <div class="padding-div">
+        </div>
          @yield('content')
-
-    </div>
+     </div>
 
     <!--End content wrapper-->
     <!--Begin footer wrapper-->

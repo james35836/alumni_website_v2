@@ -35,16 +35,17 @@ class FrontController extends Controller
     $data['page'] = "ALUMNI STORY";
     return view('front.alumni_story',$data);
   }
+  public function alumni_story_details()
+  {
+    $data['page'] = "ALUMNI STORY DETAILS";
+    return view('front.alumni_story_details',$data);
+  }
   public function program()
   {
     $data['page'] = "PROGRAM & EVENT";
     return view('front.program',$data);
   }
-  public function aboutsss()
-  {
-    $data['page'] = "about";
-    return view('front.login',$data);
-  }
+  
 
   
 }
