@@ -12,9 +12,29 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/meanmenu.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="../cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="http://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <script src="/assets/js/libs/modernizr.custom.js"></script>
-    <title>{{$page}}</title>
+    {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> --}}
+    <title>ALUMNI | {{$page}}</title>
+    <style>
+    select
+    {
+        width: 100%;
+        max-width: 322px;
+        margin: 0 auto;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        height: 50px;
+        text-align: center;
+        /*color: #9f9f9f;*/
+        font-size: 14px;
+        font-family: "Montserrat-Light";
+        margin-bottom: 10px;
+        border-bottom-color: #EEEEEE;
+        text-align-last: center;
+    }
+    </style>
 </head>
 <body>
 <div class="main-wrapper">
@@ -27,15 +47,15 @@
                         <div class="top-right col-md-9 col-sm-12 col-xs-12 pull-right">
                             <ul class="list-inline">
                                 <li class="hidden-xs">
-                                    <a href="mailto:alumni@sayidan.edu">
+                                    <a href="mailto:paloc_alumni@gmail.com">
                                         <span class="icon mail-icon"></span>
-                                        <span class="text">alumni@sayidan.edu</span>
+                                        <span class="text">paloc_alumni@gmail.com</span>
                                     </a>
                                 </li>
                                 <li class="hidden-xs">
                                     <a href="#">
                                         <span class="icon phone-icon"></span>
-                                        <span class="text">+1 087 222 9</span>
+                                        <span class="text">+639 876 543 210</span>
                                     </a>
                                 </li>
                                 <li class="top-search">
@@ -62,6 +82,9 @@
                     <div class="menu">
                         <nav>
                             <ul class="nav navbar-nav">
+                                <li class="{{ (Request::segment(1)  =='home') ? 'current' : ''||(Request::segment(1)  =='') ? 'current' : ''  }}">
+                                    <a href="/home" >HOME</a>
+                                </li>
                                 <li class="{{ (Request::segment(1)  =='about') ? 'current' : ''  }}">
                                     <a href="/about" >ABOUT US</a>
                                 </li>
@@ -72,8 +95,14 @@
                                 <li class="{{ (Request::segment(1)  =='alumni_story') ? 'current' : ''  }}">
                                    <a href="/alumni_story">ALUMNI STORY</a>
                                 </li>
-                                <li class="{{ (Request::segment(1)  =='about') ? 'current' : ''  }}">
-                                    <a href="career-opportunity.html">CAREER OPPORTUNITY</a>
+                                <li class="{{ (Request::segment(1)  =='alumni_directory') ? 'current' : ''  }}">
+                                   <a href="/alumni_directory">ALUMNI DIRECTORY</a>
+                                </li>
+                                <li class="{{ (Request::segment(1)  =='carrer') ? 'current' : ''  }}">
+                                    <a href="/carrer">CAREER OPPORTUNITY</a>
+                                </li>
+                                <li class="{{ (Request::segment(1)  =='contact') ? 'current' : ''  }}">
+                                    <a href="/contact">CONTACT US</a>
                                 </li>
                             </ul>
                         </nav>
@@ -126,11 +155,11 @@
                                     <a href="homepage-1.html"><img src="/assets/images/logo-footer.png" alt=""></a>
                                 </div>
                                 <div class="contact-desc">
-                                    <p class="text-light">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare.</p>
+                                    <p class="text-light">Paloc Elementary School is a Public Elementary School specifically located at- in the municipality of Maragusan, in province of Compostela Valley.</p>
                                 </div>
                                 <div class="contact-phone-email">
-                                    <span class="contact-phone"><a href="#">+10872229</a> | <a href="#">+10872228 </a> </span>
-                                    <span class="contact-email"><a href="#">alumni@sayidan.edu</a></span>
+                                    <span class="contact-phone"><a href="#">+369876543210</a></span>
+                                    <span class="contact-email"><a href="#">paloc_alumni@gmail.com</a></span>
                                 </div>
                             </div>
                         </div>
@@ -172,7 +201,7 @@
                         <div class="col-md-3 col-sm-12 col-xs-12 animated footer-col">
                             <div class="links-social">
                                 <div class="login-dashboard">
-                                    <a href="login-page.html" class="bg-color-theme text-center text-regular">Login Dashboard</a>
+                                    <a href="/register" class="bg-color-theme text-center text-regular">Create Account</a>
                                 </div>
                                 <ul class="list-inline text-center">
                                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -184,7 +213,7 @@
                     </div>
                 </div>
                 <div class="footer-bottom text-center">
-                    <p class="copyright text-light">©2016 Alumni Association of the University of Sayidan</p>
+                    <p class="copyright text-light">©2018 Alumni Association of Paloc Elementary School</p>
                 </div>
             </div>
         </footer>
@@ -212,6 +241,4 @@
     });
 </script>
 </body>
-
-<!-- Mirrored from sayidan_h1.kenzap.com/homepage-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 May 2018 08:57:39 GMT -->
 </html>

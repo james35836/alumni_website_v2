@@ -2859,6 +2859,13 @@ a:hover, a:active, a:focus {
   font-size: 16px;
   display: inline-block;
 }
+.account-page .account-content .buttons-set button {
+  padding: 16px 55px;
+  color: #2d2d2d;
+  font-size: 16px;
+  display: inline-block;
+  border:none;
+}
 
 @media (min-width: 768px) {
   .account-page.register {

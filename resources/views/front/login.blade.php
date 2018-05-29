@@ -6,15 +6,16 @@
             <h4 class="heading-light">LOG IN INTO ALUMNI DASHBOARD</h4>
         </div>
         <div class="account-content">
-            <form action="#">
+            <form action="/login/submit" method="POST">
+                {{csrf_field()}}
                 <div class="input-box email">
-                    <input type="text" placeholder="Email Address">
+                    <input type="text" name="user_email" placeholder="Email Address">
                 </div>
                 <div class="input-box password">
-                    <input type="text" placeholder="Password">
+                    <input type="text" name="user_password" placeholder="Password">
                 </div>
                 <div class="buttons-set">
-                    <a href="access-denied.html"  title="Log In" class="bnt bnt-theme text-regular text-uppercase">Log In</a>
+                    <button type="submit" class="bnt bnt-theme text-regular text-uppercase">Log In</button>
                 </div>
             </form>
         </div>

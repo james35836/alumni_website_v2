@@ -64,7 +64,7 @@
                                     <h2 class="heading-bold animated fadeInLeft">ANNUAL MEET UP AND SCHOLARSHIP PRESENTATIONS</h2>
                                     <span>
                                         <span class="icon map-icon"></span>
-                                        <span class="text-place text-light animated fadeInRight">Sayidan Street, Gondomanan, 8993, San Francisco, CA</span>
+                                        <span class="text-place text-light animated fadeInRight">Paloc Elementray School</span>
                                     </span>
                                 </div>
                                 <div class="col-sm-2 col-xs-3">
@@ -91,7 +91,7 @@
         <div class="alumni-dashboard">
             <div class="container">
                 <div class="title title-dashboard type1">
-                    <h3 class="heading-light no-margin"> My Sayidan Alumni Dashboard </h3>
+                    <h3 class="heading-light no-margin">Alumni Dashboard </h3>
                 </div>
                 <div class="area-content">
                     <div class="row">
@@ -132,7 +132,7 @@
                             </div>
                         </div>
                         <div class="login-dashboard text-center col-sm-12 col-xs-12">
-                            <a href="login-page.html" class="bnt bnt-theme login-links">LOG IN TO ALUMNI DASHBOARD</a>
+                            <a href="/login" class="bnt bnt-theme login-links">LOG IN TO ALUMNI DASHBOARD</a>
                         </div>
                     </div>
                 </div>
@@ -152,7 +152,7 @@
                             <div class="post-wrapper">
                                 <div class="post-item clearfix ">
                                     <div class="image-frame post-photo-wrapper">
-                                        <a href="#"> <img src="images/new-img1.jpg" alt=""></a>
+                                        <a href="#"> <img src="/assets/images/new-img1.jpg" alt=""></a>
                                     </div>
                                     <div class="post-desc-wrapper">
                                         <div class="post-desc">
@@ -165,7 +165,7 @@
                                 </div>
                                 <div class="post-item clearfix ">
                                     <div class="image-frame post-photo-wrapper">
-                                        <a href="#"> <img src="images/new-img2.jpg" alt=""></a>
+                                        <a href="#"> <img src="/assets/images/new-img2.jpg" alt=""></a>
                                     </div>
                                     <div class="post-desc-wrapper">
                                         <div class="post-desc">
@@ -178,7 +178,7 @@
                                 </div>
                                 <div class="post-item clearfix ">
                                     <div class="image-frame post-photo-wrapper">
-                                        <a href="#"> <img src="images/new-img3.jpg" alt=""></a>
+                                        <a href="#"> <img src="/assets/images/new-img3.jpg" alt=""></a>
                                     </div>
                                     <div class="post-desc-wrapper">
                                         <div class="post-desc">
@@ -191,7 +191,7 @@
                                 </div>
                                 <div class="post-item clearfix ">
                                     <div class="image-frame post-photo-wrapper">
-                                        <a href="#"> <img src="images/new-img4.jpg" alt=""></a>
+                                        <a href="#"> <img src="/assets/images/new-img4.jpg" alt=""></a>
                                     </div>
                                     <div class="post-desc-wrapper">
                                         <div class="post-desc">
@@ -214,7 +214,7 @@
                             <div class="career-content">
                                 <div class="company-item clearfix">
                                     <div class="company-logo">
-                                        <img src="images/company-logo1.png" alt="">
+                                        <img src="/assets/images/company-logo1.png" alt="">
                                             </div>
                                     <div class="company-desc-wrapper">
                                         <div class="company-desc">
@@ -227,7 +227,7 @@
                                 </div>
                                 <div class="company-item clearfix">
                                     <div class="company-logo">
-                                        <img src="images/company-logo2.png" alt="">
+                                        <img src="/assets/images/company-logo2.png" alt="">
                                             </div>
                                     <div class="company-desc-wrapper">
                                         <div class="company-desc">
@@ -240,7 +240,7 @@
                                 </div>
                                 <div class="company-item clearfix">
                                     <div class="company-logo">
-                                        <img src="images/company-logo3.png" alt="">
+                                        <img src="/assets/images/company-logo3.png" alt="">
                                             </div>
                                     <div class="company-desc-wrapper">
                                         <div class="company-desc">
@@ -253,7 +253,7 @@
                                 </div>
                                 <div class="company-item clearfix">
                                     <div class="company-logo">
-                                        <img src="images/company-logo4.png" alt="">
+                                        <img src="/assets/images/company-logo4.png" alt="">
                                             </div>
                                     <div class="company-desc-wrapper">
                                         <div class="company-desc">
@@ -265,7 +265,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="view-all"><a href="career-opportunity.html">View All Career Opportunity</a></div>
+                            <div class="view-all"><a href="/carrer">View All Career Opportunity</a></div>
                         </div>
                         
                     </div>
@@ -377,75 +377,28 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="view-all"><a href="programs-events.html">View All Events</a></div>
+                            <div class="view-all"><a href="/program">View All Events</a></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!--end block links-->
-        
-        <!--begin alumni interview-->
-        <div class="alumni-interview">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-xs-12 pull-right">
-                        <div class="interview-wrapper">
-                            <div class="interview-title">
-                                <h4 class="heading-light text-capitalize">Alumni Interview</h4>
-                                <h1 class="heading-light text-capitalize">Hannah Jordan</h1>
-                            </div>
-                            <div class="interview-desc text-left">
-                                <p class="text-light">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.</p>
-                            </div>
-                            <div class="interview-see-story">
-                                <a href="#" class="see-story bnt text-uppercase">SEE HANNAH STORY</a>
-                            </div >
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!--end alumni interview-->
-
-        <!--begin twitter stream-->
-        <div class="twitter-stream">
-            <div class="container">
-                <div class="twitter-wrapper text-center">
-                    <div class="twitter-icon color-theme">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </div>
-                    <div class="twitter-content">
-                        <div class="twitter-desc">
-                            <p class="text-light text-center">“I feel fortunate to be joining my classmates in welcoming the Class of
-                                2016 to the Sayidan alumni community <a href="#">@SayidanEdu</a> <a href="#">@SayidanEdu</a>“</p>
-                            <div class="twitter-user">
-                                <span class="avatar-user"><img src="images/avatar.png" alt=""></span>
-                                <span class="name">@KathleenLittle</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--end twitter stream-->
-
         <!--begin instagream-->
         <div class="instagream">
             <div class="instagram-feed clearfix">
                 <ul class="list-item no-margin">
-                    <li class="no-padding no-margin no-style" style="width: 12%"><a href="#"><img  src="images/ins-img1.jpg" alt=""></a></li>
-                    <li class="no-padding no-margin no-style" style="width: 19%"><a href="#"><img  src="images/ins-img2.jpg" alt=""></a></li>
-                    <li class="no-padding no-margin no-style" style="width: 19%"><a href="#"><img  src="images/ins-img3.jpg" alt=""></a></li>
-                    <li class="no-padding no-margin no-style" style="width: 19%"><a href="#"><img  src="images/ins-img4.jpg" alt=""></a></li>
-                    <li class="no-padding no-margin no-style" style="width: 19%"><a href="#"><img  src="images/ins-img5.jpg" alt=""></a></li>
-                    <li class="no-padding no-margin no-style" style="width: 12%"><a href="#"><img  src="images/ins-img6.jpg" alt=""></a></li>
+                    <li class="no-padding no-margin no-style" style="width: 12%"><a href="#"><img  src="/assets/images/ins-img1.jpg" alt=""></a></li>
+                    <li class="no-padding no-margin no-style" style="width: 19%"><a href="#"><img  src="/assets/images/ins-img2.jpg" alt=""></a></li>
+                    <li class="no-padding no-margin no-style" style="width: 19%"><a href="#"><img  src="/assets/images/ins-img3.jpg" alt=""></a></li>
+                    <li class="no-padding no-margin no-style" style="width: 19%"><a href="#"><img  src="/assets/images/ins-img4.jpg" alt=""></a></li>
+                    <li class="no-padding no-margin no-style" style="width: 19%"><a href="#"><img  src="/assets/images/ins-img5.jpg" alt=""></a></li>
+                    <li class="no-padding no-margin no-style" style="width: 12%"><a href="#"><img  src="/assets/images/ins-img6.jpg" alt=""></a></li>
                 </ul>
                 <div class="instagram-feed-user text-center">
                     <div class="user-wrapper">
                         <span class="icon-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></span>
-                        <span class="name-user">@SayidanEdu</span>
+                        <span class="name-user">@Paloc_alumni</span>
                     </div>
                 </div>
             </div>

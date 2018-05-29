@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\Http\Controllers\InActiveAuthController;
+use App\Http\Controllers\ActiveAuthController;
 use App\Http\Model\TblUserModel;
 use Redirect;
 use Session;
@@ -13,37 +13,45 @@ use Crypt;
 use Mail;
 
 
-class AlumniController extends Controller
+class AlumniController extends ActiveAuthController
 {
   public function dashboard()
   {
+    $data['user'] = StaticFunctionController::global();
     $data['page'] = "DASHBOARD";
+    // dd($data);
     return view('alumni.dashboard',$data);
   }
+  public function announcement()
+  {
+    $data['user'] = StaticFunctionController::global();
+    $data['page'] = "ANNOUNCEMENT";
+    return view('alumni.announcement',$data);
+  }
+  public function manage_user()
+  {
+    $data['user'] = StaticFunctionController::global();
+    $data['page'] = "MANAGE USER";
+    return view('alumni.manage_user',$data);
+  }
+  public function alumni_directory()
+  {
+    $data['user'] = StaticFunctionController::global();
+    $data['page'] = "ALUMNI DIRECTORY";
+    return view('alumni.alumni_directory',$data);
+  }
+
   public function profile()
   {
+    $data['user'] = StaticFunctionController::global();
     $data['page'] = "PROFILE";
     return view('alumni.profile',$data);
   }
-  public function about()
+  public function timeline()
   {
-    $data['page'] = "ABOUT US";
-    return view('front.about',$data);
-  }
-  public function alumni_story()
-  {
-    $data['page'] = "ALUMNI STORY";
-    return view('front.alumni_story',$data);
-  }
-  public function alumni_story_details()
-  {
-    $data['page'] = "ALUMNI STORY DETAILS";
-    return view('front.alumni_story_details',$data);
-  }
-  public function program()
-  {
-    $data['page'] = "PROGRAM & EVENT";
-    return view('front.program',$data);
+    $data['user'] = StaticFunctionController::global();
+    $data['page'] = "TIMELINE";
+    return view('alumni.timeline',$data);
   }
   
 

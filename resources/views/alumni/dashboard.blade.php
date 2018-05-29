@@ -1,3 +1,4 @@
+{{-- https://quickadminpanel.com/blog/stripe-payments-in-laravel-the-ultimate-guide/ --}}
 @extends('layout.alumni_layout')
 @section('content')
 <div class="container-fluid">
@@ -10,11 +11,6 @@
             </ol>
         </div>
     </div>
-    <!-- /.row -->
-    <!-- ============================================================== -->
-    <!-- Different data widgets -->
-    <!-- ============================================================== -->
-    <!-- .row -->
     <div class="row">
         <div class="col-lg-3 col-sm-6 col-xs-12">
             <div class="white-box analytics-info">
@@ -61,9 +57,6 @@
             </div>
         </div>
     </div>
-    <!--/.row -->
-    <!--row -->
-    <!-- /.row -->
     <div class="row">
         <div class="col-md-12 col-lg-8 col-sm-12 col-xs-12">
             <div class="white-box">
@@ -128,9 +121,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- ============================================================== -->
-                <!-- Recent comment, table & feed widgets -->
-                <!-- ============================================================== -->
                 <div class="row">
                     <div class="col-md-12 col-lg-6 col-sm-12">
                         <div class="white-box">
@@ -244,9 +234,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- ============================================================== -->
-                            <!-- calendar widgets -->
-                            <!-- ============================================================== -->
                             <div class="row">
                                 <div class="col-lg-4 col-md-12 col-sm-12">
                                     <div class="panel">

@@ -18,9 +18,9 @@
                 <div class="user-bg"> <img width="100%" alt="user" src="/alumni_assets/plugins/images/large/img1.jpg">
                     <div class="overlay-box">
                         <div class="user-content">
-                            <a href="javascript:void(0)"><img src="/alumni_assets/plugins/images/users/genu.jpg" class="thumb-lg img-circle" alt="img"></a>
-                            <h4 class="text-white">User Name</h4>
-                        <h5 class="text-white">info@myadmin.com</h5> </div>
+                            <a href="javascript:void(0)"><img src="{{$user->user_profile}}" class="thumb-lg img-circle" alt="img"></a>
+                            <h4 class="text-white">{{$user->user_first_name." ".$user->user_last_name}}</h4>
+                        <h5 class="text-white">{{$user->user_email}}</h5> </div>
                     </div>
                 </div>
                 <div class="user-btm-box">
@@ -40,7 +40,7 @@
             <div class="white-box">
                 <ul class="nav nav-tabs tabs customtab">
                     <li class="active tab">
-                        <a href="#home" data-toggle="tab"> <span class="visible-xs"><i class="fa fa-home"></i></span> <span class="hidden-xs">Activity</span> </a>
+                        <a href="#home" data-toggle="tab"> <span class="visible-xs"><i class="fa fa-home"></i></span> <span class="hidden-xs">Timeline</span> </a>
                     </li>
                     <li class="tab">
                         <a href="#profile" data-toggle="tab"> <span class="visible-xs"><i class="fa fa-user"></i></span> <span class="hidden-xs">Profile</span> </a>
