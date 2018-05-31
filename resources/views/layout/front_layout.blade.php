@@ -75,9 +75,9 @@
             <div class="header-middle">
                 <div class="container">
 
-                    <!-- <div class="logo hidden-sm hidden-xs">
+                    <div class="logo hidden-sm hidden-xs">
                         <a href="#"> <img src="/assets/images/logo.png" alt="logo"></a>
-                    </div> -->
+                    </div>
                     
                     <div class="menu">
                         <nav>
