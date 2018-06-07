@@ -23,6 +23,12 @@ class AlumniController extends ActiveAuthController
             $data['page'] = "ANNOUNCEMENT";
             return view('alumni.announcement',$data);
       }
+      public function post_announcement()
+      {
+            $data['user'] = StaticFunctionController::global();
+            $data['page'] = "ANNOUNCEMENT";
+            return view('alumni.post_announcement',$data);
+      }
       public function manage_user()
       {
             $data['user'] = StaticFunctionController::global();

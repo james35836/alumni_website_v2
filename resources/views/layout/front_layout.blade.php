@@ -95,9 +95,9 @@
                                 <li class="{{ (Request::segment(1)  =='alumni_story') ? 'current' : ''  }}">
                                    <a href="/alumni_story">ALUMNI STORY</a>
                                 </li>
-                                <li class="{{ (Request::segment(1)  =='alumni_directory') ? 'current' : ''  }}">
+                               {{--  <li class="{{ (Request::segment(1)  =='alumni_directory') ? 'current' : ''  }}">
                                    <a href="/alumni_directory">ALUMNI DIRECTORY</a>
-                                </li>
+                                </li> --}}
                                 <li class="{{ (Request::segment(1)  =='carrer') ? 'current' : ''  }}">
                                     <a href="/carrer">CAREER OPPORTUNITY</a>
                                 </li>

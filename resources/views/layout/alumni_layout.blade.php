@@ -36,7 +36,7 @@
         <link href="/alumni_assets/plugins/bower_components/calendar/dist/fullcalendar.css" rel="stylesheet" />
         <!-- animation CSS -->
         <!-- Custom CSS -->
-        
+         <link href="/alumni_assets/plugins/bower_components/summernote/dist/summernote.css" rel="stylesheet" />
         <!-- color CSS -->
         
     </head>
@@ -83,7 +83,7 @@
                                         <li role="separator" class="divider"></li>
                                         <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
                                         <li role="separator" class="divider"></li>
-                                        <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                                        <li><a href="/logout"><i class="fa fa-power-off"></i> Logout</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -104,24 +104,29 @@
                                             <li role="separator" class="divider"></li>
                                             <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
                                             <li role="separator" class="divider"></li>
-                                            <li><a href="login.html"><i class="fa fa-power-off"></i> Logout</a></li>
+                                            <li><a href="/logout"><i class="fa fa-power-off"></i> Logout</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <ul class="nav" id="side-menu">
-                                    <li> <a href="/dashboard" class="waves-effect"><i  class="mdi mdi-menu fa-fw"></i> <span class="hide-menu">Dashboard</span></a> </li>
-                                    <li> <a href="/announcement" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">Announcement</span></a> </li>
-                                    <li> <a href="/manage-user" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">Manage User</span></a> </li>
-                                    <li> <a href="/timeline" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">Timeline</span></a> </li>
-                                    <li> <a href="/alumni-directory" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">Alumni Directory</span></a> </li>
-                                    <li> <a href="/general-chat" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">General Chat</span></a> </li>
-                                    <li> <a href="/group-chat" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">Group Chat</span></a> </li>
-                                    <li> <a href="/gallery" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">Gallery</span></a> </li>
-                                    <li> <a href="/event-calendar" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">Event Calendar</span></a> </li>
-                                    <li> <a href="/nearby" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">Nearby</span></a> </li>
-                                    <li> <a href="/faqs" class="waves-effect"><i class="mdi mdi-logout fa-fw"></i> <span class="hide-menu">Faqs</span></a></li>
-                                    <li> <a href="documentation.html" class="waves-effect"><i class="fa fa-circle-o text-danger"></i> <span class="hide-menu">Logout</span></a></li>
+                                    <li> <a href="/alumni/dashboard" class="waves-effect"><i  class="mdi mdi-menu fa-fw"></i> <span class="hide-menu">DASHBOARD</span></a> </li>
+                                    <li> <a href="/alumni/announcement" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">ANNOUNCEMENT</span></a> </li>
                                     
+                                    <li> <a href="/alumni/timeline" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">TIMELINE</span></a> </li>
+                                    <li> <a href="/alumni/alumni-directory" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">ALUMNI DIRECTORY</span></a> </li>
+                                    <li> <a href="/alumni/general-chat" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">GENERAL CHAT</span></a> </li>
+                                    <li> <a href="/alumni/group-chat" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">GROUP CHAT</span></a> </li>
+                                    <li> <a href="/alumni/gallery" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">GALLERY</span></a> </li>
+                                    <li> <a href="/alumni/event-calendar" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">EVENT CALENDAR</span></a> </li>
+                                    <li> <a href="/alumni/nearby" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">NEARBY</span></a> </li>
+                                    <li> <a href="/alumni/faqs" class="waves-effect"><i class="mdi mdi-logout fa-fw"></i> <span class="hide-menu">FAQS</span></a></li>
+                                    <li> <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-cart-outline fa-fw" data-icon="v"></i> <span class="hide-menu"> SETTINGS <span class="fa arrow"></span> </span></a>
+                                        <ul class="nav nav-second-level">
+                                            <li> <a href="products.html"><i class="fa-fw">P</i><span class="hide-menu">REGISTERED USER</span></a> </li>
+                                            <li> <a href="/alumni/manage-user" class="waves-effect"><i class="fa-fw">P</i><span class="hide-menu">MANAGE USER</span></a> </li>
+                                            <li> <a href="/alumni/post-announcement" class="waves-effect"><i class="fa-fw">P</i><span class="hide-menu">POST ANNOUNCEMENT</span></a> </li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -166,6 +171,27 @@
                 <script src='/alumni_assets/plugins/bower_components/calendar/dist/fullcalendar.min.js'></script>
                 <script src="/alumni_assets/plugins/bower_components/calendar/dist/jquery.fullcalendar.js"></script>
                 <script src="/alumni_assets/plugins/bower_components/calendar/dist/cal-init.js"></script>
+
+
+                <script src="/alumni_assets/plugins/bower_components/summernote/dist/summernote.min.js"></script>
+                <script>
+                jQuery(document).ready(function() {
+                    $('.summernote').summernote({
+                        height: 350, // set editor height
+                        minHeight: null, // set minimum height of editor
+                        maxHeight: null, // set maximum height of editor
+                        focus: false // set focus to editable area after initializing summernote
+                    });
+                    $('.inline-editor').summernote({
+                        airMode: true
+                    });
+                });
+                window.edit = function() {
+                    $(".click2edit").summernote()
+                }, window.save = function() {
+                    $(".click2edit").destroy()
+                }
+                </script>
                 <script type="text/javascript">
                 $(document).ready(function($) {
                 // delegate calls to data-toggle="lightbox"
