@@ -101,9 +101,9 @@
                                 <li class="{{ (Request::segment(1)  =='carrer') ? 'current' : ''  }}">
                                     <a href="/carrer">CAREER OPPORTUNITY</a>
                                 </li>
-                                <li class="{{ (Request::segment(1)  =='contact') ? 'current' : ''  }}">
+                                {{-- <li class="{{ (Request::segment(1)  =='contact') ? 'current' : ''  }}">
                                     <a href="/contact">CONTACT US</a>
-                                </li>
+                                </li> --}}
                             </ul>
                         </nav>
                     </div>

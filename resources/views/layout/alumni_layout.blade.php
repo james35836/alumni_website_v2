@@ -114,6 +114,7 @@
                                     
                                     <li> <a href="/alumni/timeline" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">TIMELINE</span></a> </li>
                                     <li> <a href="/alumni/alumni-directory" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">ALUMNI DIRECTORY</span></a> </li>
+                                    <li> <a href="/alumni/faqs" class="waves-effect"><i class="mdi mdi-logout fa-fw"></i> <span class="hide-menu">FACULTY DIRECTORY</span></a></li>
                                     <li> <a href="/alumni/general-chat" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">GENERAL CHAT</span></a> </li>
                                     <li> <a href="/alumni/group-chat" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">GROUP CHAT</span></a> </li>
                                     <li> <a href="/alumni/gallery" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">GALLERY</span></a> </li>
@@ -125,6 +126,7 @@
                                             <li> <a href="products.html"><i class="fa-fw">P</i><span class="hide-menu">REGISTERED USER</span></a> </li>
                                             <li> <a href="/alumni/manage-user" class="waves-effect"><i class="fa-fw">P</i><span class="hide-menu">MANAGE USER</span></a> </li>
                                             <li> <a href="/alumni/post-announcement" class="waves-effect"><i class="fa-fw">P</i><span class="hide-menu">POST ANNOUNCEMENT</span></a> </li>
+                                            <li> <a href="/alumni/post-event" class="waves-effect"><i class="fa-fw">P</i><span class="hide-menu">POST PROGRAM & EVENTS</span></a> </li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -154,6 +156,7 @@
                 <script src="/alumni_assets/plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
                 <!-- Custom Theme JavaScript -->
                 <script src="/alumni_assets/js/custom.min.js"></script>
+                <script src="/alumni_assets/js/jasny-bootstrap.js"></script>
                 <script src="/alumni_assets/js/dashboard1.js"></script>
                 <script src="/alumni_assets/plugins/bower_components/toast-master/js/jquery.toast.js"></script>
                 <!--Style Switcher -->

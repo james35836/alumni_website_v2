@@ -19,6 +19,19 @@ use Session;
 
 class StaticFunctionController extends Controller
 {
+    public static function upload_file($file,$path)
+    {
+        $unique_name   = substr(str_shuffle("ABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0,5);
+        $fileImageRef = $unique_name.'-'.$file->getClientOriginalName();
+        $file->move($path,$fileImageRef );
+
+        return '/'.$path.'/'.$fileImageRef;
+    }
+
+
+
+
+
   public static function global()
   {
     $user_info = TblUserInfoModel::where('tbl_user_info.user_id',session('user_id'))

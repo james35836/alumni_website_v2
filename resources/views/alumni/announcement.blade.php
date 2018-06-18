@@ -18,10 +18,15 @@
                     <div class="timeline">
                         <div class="events-wrapper">
                             <div class="events">
+                                
                                 <ol>
-                                    <li><a href="#0" data-date="16/01/2014" class="selected">16 Jan</a></li>
-                                    <li><a href="#0" data-date="28/02/2014">28 Feb</a></li>
-                                    <li><a href="#0" data-date="20/04/2014">20 Mar</a></li>
+                                    @foreach($_announcement as $key=>$announcement)
+                                    {{-- {{dd(date('d-m-Y',strtotime($announcement->announcement_created)))}}
+                                    @if($key==0)
+                                    <li><a href="#0" data-date="{{date('d-m-Y',strtotime($announcement->announcement_created))}}" class="selected">16 Jan</a></li>
+                                    @else --}}
+                                    <li><a href="#0" data-date="{{date('d-m-Y',strtotime($announcement->announcement_created))}}" @if($key==0)class="selected" @endif>28 Feb</a></li>
+                                    {{-- <li><a href="#0" data-date="20/04/2014">20 Mar</a></li>
                                     <li><a href="#0" data-date="20/05/2014">20 May</a></li>
                                     <li><a href="#0" data-date="09/07/2014">09 Jul</a></li>
                                     <li><a href="#0" data-date="30/08/2014">30 Aug</a></li>
@@ -29,9 +34,13 @@
                                     <li><a href="#0" data-date="01/11/2014">01 Nov</a></li>
                                     <li><a href="#0" data-date="10/12/2014">10 Dec</a></li>
                                     <li><a href="#0" data-date="19/01/2015">29 Jan</a></li>
-                                    <li><a href="#0" data-date="03/03/2015">3 Mar</a></li>
-                                    </ol> <span class="filling-line" aria-hidden="true"></span> </div>
-                                    <!-- .events -->
+                                    <li><a href="#0" data-date="03/03/2015">3 Mar</a></li> --}}
+                                    {{-- @endif --}}
+                                    @endforeach
+                                </ol>
+                                
+                                <span class="filling-line" aria-hidden="true"></span> 
+                            </div>
                                 </div>
                                 <!-- .events-wrapper -->
                                 <ul class="cd-timeline-navigation">
@@ -43,14 +52,16 @@
                             <!-- .timeline -->
                             <div class="events-content">
                                 <ol>
-                                    <li class="selected" data-date="16/01/2014">
+                                    @foreach($_announcement as $key=>$announcement)
+                                    <li @if($key==0)class="selected" @endif data-date="{{date('d-m-Y',strtotime($announcement->announcement_created))}}">
                                         <h2><img class="img-responsive img-circle pull-left m-r-20 m-b-10" width="60" alt="user" src="/alumni_assets/plugins/images/users/genu.jpg"> Horizontal Timeline<br/><small>January 16th, 2014</small></h2>
                                         <hr class="m-t-40">
-                                        <p class="m-t-40"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                                        <p class="m-t-40">{{$announcement->announcement_id}}   fgdsgdsfgdsfg Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
                                             <button class="btn btn-info btn-rounded btn-outline m-t-20">Read more</button>
                                         </p>
                                     </li>
-                                    <li data-date="28/02/2014">
+                                    @endforeach
+                                    {{-- <li data-date="28/02/2014">
                                         <h2><img class="img-responsive img-circle pull-left m-r-20 m-b-10" width="60" alt="user" src="/alumni_assets/plugins/images/users/govinda.jpg"> Horizontal Timeline<br/><small>Feb 28th, 2014</small></h2>
                                         <hr class="m-t-40">
                                         <p class="m-t-40"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
@@ -113,7 +124,7 @@
                                     <li data-date="03/03/2015">
                                         <h2>Event title here</h2> <em>March 3rd, 2015</em>
                                         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus. </p>
-                                    </li>
+                                    </li> --}}
                                 </ol>
                             </div>
                             <!-- .events-content -->

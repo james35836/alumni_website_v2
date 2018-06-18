@@ -38,7 +38,7 @@ class FrontController extends Controller
             {
                 Session::put('active','active_user_login');
                 Session::put('user_id',$user->user_id);
-                $link = "/dashboard";
+                $link = "/alumni/dashboard";
 
             }
             else
